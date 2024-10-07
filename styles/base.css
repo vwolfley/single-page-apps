@@ -1,0 +1,195 @@
+/* CSS Style Sheet for index.html the main site for wdd 230 vern wolfley*/
+
+/* import fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+:root {
+    /* color palette for webpage */
+    --primary-color: #002e5d;
+    --secondary-color: #0062b8;
+    --accent1-color: #ffffff;
+    --accent2-color: #666666;
+    --accent3-color: #c0c0c0;
+    --accent4-color: #5d0000;
+
+    /* font styles for webpage */
+    --heading-font: Paytone One, Georgia, serif;
+    --paragraph-font: "Trebuchet MS", Arial, sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #002e5d; /* headlines on a white background */
+    --headline-color-on-color: white; /* headlines on a colored background */
+    --paragraph-color-on-white: #002e5d; /* paragraph text on a white background */
+    --paragraph-color-on-color: #666666; /* paragraph text on a colored background */
+    --paragraph-background-color: #ffffff;
+    --nav-link-color: #ffffff;
+    --nav-background-color: #002e5d;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #0062b8;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    line-height: 1.15;
+    background-color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+}
+
+/* ------------------------- 
+        Header 
+----------------------------*/
+
+#headTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 5px 20px;
+    gap: 20px;
+    background-color: var(--accent3-color);
+}
+
+#title-img {
+    width: auto;
+    height: 100px;
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--headline-color-on-white);
+}
+
+/* Nav bar */
+.header-nav {
+    display: flex;
+    padding: 1rem;
+    margin: 0.25rem;
+    flex-direction: column;
+    list-style: none;
+}
+
+.header-nav li a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.header-nav nav {
+    margin-left: auto; 
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;          /* Adjust padding to your preference */
+    background-color: #007BFF;   /* Button background color (blue in this case) */
+    color: white;                /* Text color */
+    text-decoration: none;       /* Remove underline */
+    font-size: 16px;             /* Font size */
+    border: 2px solid transparent; /* Add transparent border */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button-link:hover {
+    background-color: #0056b3;   /* Darken background on hover */
+    border-color: #004085;       /* Add border color on hover */
+}
+
+.button-link:active {
+    background-color: #004085;   /* Even darker color when clicked */
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    display: inline;
+}
+
+
+/* ------------------------- 
+        Footer 
+----------------------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 25px 50px;
+    margin-top: auto;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--nav-hover-background-color);
+}
+
+footer p {
+    font-size: 0.65em;
+    margin: 5px;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+footer .social {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+footer .social a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social img {
+    width: 30px;
+    height: 30px;
+}
+
+#azFlag {
+    width: auto;
+    height: 30px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
